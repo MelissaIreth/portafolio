@@ -1,7 +1,9 @@
 .navbar-default{
 	margin-bottom: 0;
-	background-color: transparent;
 	border-color: transparent;
+	li:hover{
+		background-color: $lemon;
+	}
 }
 
 body{
@@ -110,4 +112,15 @@ body{
 	}
 }
 
-
+footer{
+	padding: 70px 0;
+	background-color: $pewter;
+	font-family: $raleway;
+	h1{
+		font-size: 3em;
+	}
+	a{
+		color: $linen;
+		font-size: 4em;
+	}
+}

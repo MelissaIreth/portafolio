@@ -1,7 +1,8 @@
 .navbar-default {
   margin-bottom: 0;
-  background-color: transparent;
   border-color: transparent; }
+  .navbar-default li:hover {
+    background-color: #e1b80d; }
 
 body {
   background-color: #cdcdc0; }
@@ -87,5 +88,15 @@ body {
       color: #ddbc95; }
   #proyects .caja:hover .overlay {
     opacity: 1; }
+
+footer {
+  padding: 70px 0;
+  background-color: #867666;
+  font-family: "Raleway", sans-serif; }
+  footer h1 {
+    font-size: 3em; }
+  footer a {
+    color: #eae2d6;
+    font-size: 4em; }
 
 /*# sourceMappingURL=main.css.map */
