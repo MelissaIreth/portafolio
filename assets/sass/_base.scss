@@ -1,20 +1,113 @@
 .navbar-default{
 	margin-bottom: 0;
+	background-color: transparent;
+	border-color: transparent;
 }
 
-
+body{
+	background-color: $gris-claro;
+}
 #header{
 	img{
 		width: 100%;
 	}
-	.img-dos{
-		height: 530px;
-	}
+
 	h1{
 		font-family: $comforta;
 		margin-top: -400px;
 		font-size: 100px;
-		color: rgba(0,0,0,0.65)
+		color: rgba(0,0,0,0.65);
 	}
-
+	h4{
+		color: rgba(0,0,0,0.65);
+		font-size: 50px;
+	}
 }
+
+#about{
+	@include shadow();
+	margin-top: 250px;
+	background-color: $latte;
+	color: $gris-oscuro;
+	font-family: $raleway;
+	margin-bottom: 25px;
+	.text-about{
+		margin-top: 70px;
+		h1{
+			font-size: 3em;
+		}
+		p{
+			font-size: 20px;
+			padding-left: 30px;
+			padding-top: 50px;
+		}
+	}
+	img{
+		opacity: 0.5;
+		margin: 15px 0;
+		width: 90%;
+	}
+}
+#tools{
+	padding: 70px 0;
+	background-color: $gris-oscuro;
+	color: $gris-claro;
+	font-family: $raleway;
+	h1{
+		font-size: 3em;
+	}
+	a{
+		text-decoration: none;
+		color: $gris-claro;
+		font-size: 100px;
+	}
+}
+
+#proyects{
+	padding: 70px 0;
+	font-family: $raleway;
+	.all{
+		padding: 50px 0;
+	}
+	.caja {
+ 		position: relative;
+ 		.image {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		}
+		.overlay {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  height: 100%;
+		  width: 100%;
+		  opacity: 0;
+		  transition: .5s ease;
+		  background-color: $gris-oscuro;
+		.text {
+		  color: white;
+		  font-size: 20px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		}
+		}
+	}
+	a{
+		color: $gris-claro;
+		font-size: 2em;
+		&:hover{
+			color: $latte;
+		}
+	}
+	.caja:hover .overlay {
+		opacity: 1;
+	}
+}
+
+
