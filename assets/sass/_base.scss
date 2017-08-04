@@ -2,34 +2,38 @@
 	margin-bottom: 0;
 	border-color: transparent;
 	li:hover{
-		background-color: $lemon;
+		background-color: $oyster;
 	}
 }
 
 body{
-	background-color: $gris-claro;
+	background-color: white;
 }
 #header{
-	img{
-		width: 100%;
-	}
-
 	h1{
 		font-family: $comforta;
-		margin-top: -400px;
+		margin-top: -340px;
 		font-size: 100px;
-		color: rgba(0,0,0,0.65);
+		color: rgba(255,255,255,0.82);
+		z-index: 1000;
+		position: absolute;
+		padding-left: 67px;
 	}
 	h4{
 		color: rgba(0,0,0,0.65);
 		font-size: 50px;
+		position: absolute;
+		z-index: 1000;
+		margin-top: -260px;
+		font-weight: bold;
+		padding-left: 540px;
 	}
 }
 
 #about{
-	@include shadow();
-	margin-top: 250px;
-	background-color: $latte;
+	/*@include shadow();*/
+	margin-top: 410px;
+	/*background-color: $latte;*/
 	color: $gris-oscuro;
 	font-family: $raleway;
 	margin-bottom: 25px;
@@ -58,16 +62,21 @@ body{
 	h1{
 		font-size: 3em;
 	}
-	a{
-		text-decoration: none;
+	.caja-tools{
+		padding: 20px 0;
+		i{
 		color: $gris-claro;
 		font-size: 100px;
+	}
 	}
 }
 
 #proyects{
 	padding: 70px 0;
 	font-family: $raleway;
+	h2{
+		color: $linen;
+	}
 	.all{
 		padding: 50px 0;
 	}
@@ -113,8 +122,8 @@ body{
 }
 
 footer{
-	padding: 70px 0;
-	background-color: $pewter;
+	padding: 70px 0 40px 0;
+	background-color: $gris-oscuro;
 	font-family: $raleway;
 	h1{
 		font-size: 3em;
@@ -123,4 +132,84 @@ footer{
 		color: $linen;
 		font-size: 4em;
 	}
+	.container{
+		border-bottom: 2px solid $gris-claro;
+	}
+	p{
+		margin-top: 30px;
+	}
+}
+
+/**/
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    margin-top: 50px;
+    height: 300px;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #ddbc95 20%, #626d71 80%)
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
 }
