@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" id="mynav">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -42,48 +42,72 @@
 		<div class="row">
 			<div class="col-md-6 text-about">
 			<h1 class="text-center">About me <i class="fa fa-moon-o" aria-hidden="true"></i></h1>
-				<p>Egresada de Comunicación audiovisual, con interés en la tecnología y comunicar, es por esto que me desafié a estudiar programación y lograr unir ambos intereses. Me motiva desarrollar una carrera en la industria tecnológica y superar desafíos en equipo. Me caracterizo por mis ganas de aprender, ser responsable y practica. Me gusta el cine, disfrutar en familia al aire libre y poder entregarle herramientas de conocimiento a mi hija.</p>
+				<p>Front-end Developer jr. y Egresada de Comunicación Audiovisual, me defino como una
+				persona comprometida y dedicada, en su totalidad, al cumplimiento de las metas que se me
+				fijen, al trabajo en equipo y a mis propias metas, ya sea en el ámbito profesional como a nivel personal, ya que una de mis consignas más importantes es que el esfuerzo y trabajo traen consigo mejores oportunidades de desarrollo y crecimiento.
+				Me gusta el cine, el chocolate y disfrutar al aire libre en familia.</p>
 			</div>
 			<div class="col-md-6">
 				<img src="assets/img/me.jpg" class="img-responsive img-circle">
 			</div>
 		</div>
 	</section>
+
 	<section id="tools">
 	<h1 class="text-center">Herramientas <i class="fa fa-code" aria-hidden="true"></i></h1>
-		<div class="row caja-tools">
-			<div class="col-md-4 col-xs-4 text-center">
-				<i class="devicon-javascript-plain" title="Javascript"></i>
-			</div>
-			<div class="col-md-4 col-xs-4 text-center">
-				<i class="devicon-jquery-plain" title="Jquery"></i>
-			</div>
-			<div class="col-md-4 col-xs-4 text-center">
-				<i class="devicon-html5-plain" title="HTML5"></i>
-			</div>
+		<div class="container">
+		<div class="row">
+		  <div class="col-md-4 col-xs-4">
+		    <img src="assets/img/javascript.png" class="img-responsive">
+		      <h2>Javascript</h2>
+		      <p>Lenguaje de programación que se utiliza principalmente para crear páginas web dinámicas.</p>
+		  </div>
+		  <div class="col-md-4 col-xs-4">
+		    <img src="assets/img/jquery.png" class="img-responsive">
+		      <h2>JQuery</h2>
+		      <p>Librería de JavaScript que simplifica la tarea de programar.</p>
+		  </div>
+		  <div class="col-md-4 col-xs-4">
+		    <img src="assets/img/html5.png" class="img-responsive">
+		      <h2>HTML5</h2>
+		      <p>Lenguaje de marcado para la elaboración de páginas web.</p>
+		  </div>
 		</div>
-		<div class="row caja-tools">
-			<div class="col-md-4 col-xs-4 text-center">
-				<i class="devicon-bootstrap-plain" title="Bootstrap"></i>
-			</div>
-			<div class="col-md-4 col-xs-4 text-center">
-				<i class="devicon-github-plain" title="Github"></i>
-			</div>
-			<div class="col-md-4 col-xs-4 text-center">
-				 <i class="devicon-gulp-plain" title="Gulp"></i>
-			</div>
+		<div class="row">
+		  <div class="col-md-4 col-xs-4">
+		    <img src="assets/img/bootstrap.png" class="img-responsive">
+		      <h2>Bootstrap</h2>
+		      <p>Framework que permite crear de forma sencilla webs de diseño adaptable.</p>
+		  </div>
+		  <div class="col-md-4 col-xs-4">
+		    <img src="assets/img/github.png" class="img-responsive">
+		      <h2>Github</h2>
+		      <p>Plataforma de desarrollo colaborativo para alojar proyectos.</p>
+		  </div>
+		  <div class="col-md-4 col-xs-4">
+		    <img src="assets/img/gulp.png" class="img-responsive">
+		      <h2>Gulp</h2>
+		      <p>Herramienta, que te ayuda a automatizar tareas comunes en el desarrollo de una aplicación.</p>
+		  </div>
 		</div>
-		<div class="row caja-tools">
-			<div class="col-md-4 col-xs-4 text-center">
-				<i class="devicon-nodejs-plain" title="Nodejs"></i>
-			</div>
-			<div class="col-md-4 col-xs-4 text-center">
-				<i class="devicon-sass-original" title="Sass"></i>
-			</div>
-			<div class="col-md-4 col-xs-4 text-center">
-				 <i class="devicon-slack-plain" title="Slack"></i>
-			</div>
+		<div class="row">
+		  <div class="col-md-4 col-xs-4">
+		    <img src="assets/img/noejs.png" class="img-responsive">
+		      <h2>NodeJS</h2>
+		      <p>Es un entorno en tiempo de ejecución multiplataforma, de código abierto, para la capa del servidor.</p>
+		  </div>
+		  <div class="col-md-4 col-xs-4">
+		    <img src="assets/img/sass.png" class="img-responsive">
+		      <h2>SASS</h2>
+		      <p>Metalenguaje de Hojas de Estilo en Cascada (CSS).</p>
+		  </div>
+		  <div class="col-md-4 col-xs-4">
+		    <img src="assets/img/slack.svg" class="img-responsive">
+		      <h2>Slack</h2>
+		      <p>Herramienta de mensajería pensada para equipos.</p>
+		  </div>
 		</div>
+	</div>
 		
 	</section>
 	<section id="proyects">
@@ -126,9 +150,9 @@
 				</div>
 				<div class="row">
 				<div class="col-md-6 caja" title="Trabajo colaborativo">
-					<img src="assets/img/dribble.png" class="img-responsive image">
+					<img src="assets/img/lab.svg" class="img-responsive image">
 					<div class="overlay">
-    					<div class="text text-center"><h2>Dribbble</h2>
+    					<div class="text text-center"><h2>Lab studio</h2>
     					<p>Proyecto colaborativo donde realice el llamado a la API.</p>
     					<a href="https://josefaherrera.github.io/dribbble-lab/" title="Gh-pages"><i class="fa fa-eye" aria-hidden="true"></i></a></div>
   					</div>
@@ -150,15 +174,15 @@
 		<h1 class="text-center">Contacto <i class="fa fa-hand-peace-o" aria-hidden="true"></i></h1>
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<a href="https://www.linkedin.com/in/melissa-pacheco-055261147/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>					
+					<a href="https://www.linkedin.com/in/melissa-in%C3%A9s-pacheco-martinez-055261147/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>					
 					<a href="https://github.com/MelissaIreth"><i class="fa fa-github" aria-hidden="true"></i></a>
 					<a href="mailto:melissa.pacheco.martinez@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
 					<a href="" title="+569 76679838"><i class="fa fa-mobile" aria-hidden="true"></i></a>	
 				</div>
 			</div>
 		</div>
-		<p class="text-center">Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Melissa Pacheco</p>
-		<p class="text-center">2017</p>
+		<p class="text-center">Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Melissa</p>
+		<p class="text-center dos">2017</p>
 	</footer>
 	
 

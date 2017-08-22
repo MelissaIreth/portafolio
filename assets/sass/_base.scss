@@ -3,41 +3,44 @@ body{
 	margin: 0;
 	padding: 0;
 }
+.nav-colored { 
+	background-color: #f1f1f3;
+}
+.nav-transparent { 
+	background-color:transparent;
+}
 .navbar-default{
 	margin-bottom: 0;
 	border: 0;
-	background-color: $azul-claro;
 	li:hover{
-		background-color: $verde-claro;
+		background-color: $morado;
+		color: white;
 	}
 	a{
-		color: $verde-claro;
+		color: white;
 		font-size: 20px;
 	}
 }
  
 #header{
-	background-image: url(../img/pc.jpg);
+	background-image: url(../img/fondito.jpg);
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
 	h1{
-		font-family: $comforta;
+		font-family: $shadow;
 		font-size: 100px;
 		color: rgba(255,255,255,0.82);
-		margin-top: 180px;
-		padding-left: 67px;
+		margin-top: 200px;
 	}
 	h4{
 		color: rgba(0,0,0,0.65);
 		font-size: 50px;
 		position: absolute;
 		z-index: 1000;
-
 		font-weight: bold;
-		padding-left: 540px;
 	}
 }
 
@@ -49,7 +52,7 @@ body{
 	.text-about{
 		margin-top: 70px;
 		h1{
-			font-size: 5em;
+			font-size: 4em;
 		}
 		p{
 			font-size: 25px;
@@ -63,21 +66,17 @@ body{
 		width: 80%;
 	}
 }
+
 #tools{
 	padding: 70px 0;
-	background-color: $verde-oscuro;
+	background-color: $morado;
 	color: $gris-claro;
 	font-family: $raleway;
 	h1{
-		font-size: 5em;
-		color: $azul-oscuro;
+		font-size: 4em;
 	}
-	.caja-tools{
-		padding: 20px 0;
-		i{
-		color: $gris-claro;
-		font-size: 100px;
-	}
+	img{
+		width: 50%;
 	}
 }
 
@@ -85,7 +84,7 @@ body{
 	padding: 70px 0;
 	font-family: $raleway;
 	h1{
-		font-size: 5em;
+		font-size: 4em;
 	}
 	h2{
 		color: $linen;
@@ -110,7 +109,7 @@ body{
 		  width: 100%;
 		  opacity: 0;
 		  transition: .5s ease;
-		  background-color: $gris-oscuro;
+		  background-color: $morado;
 		.text {
 		  color: white;
 		  font-size: 20px;
@@ -145,7 +144,7 @@ footer{
     height: 400px;
     opacity: 0.8;
 	h1{
-		font-size: 5em;
+		font-size: 4em;
 		color: $azul-oscuro;
 	}
 	a{
@@ -162,5 +161,8 @@ footer{
 	}
 	p{
 		margin-top: 30px;
+	}
+	.dos{
+		margin-top: -12px;
 	}
 }
