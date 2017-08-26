@@ -27,35 +27,33 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
-  background-opacity: 0.5; }
+  height: 800px; }
   #header h1 {
     font-family: "Covered By Your Grace", cursive;
     font-size: 130px;
     color: #ce0d55;
     margin-top: 143px;
-    padding-left: 656px; }
-    @media screen and (max-width: 700px) {
+    padding-left: 400px; }
+    @media screen and (max-width: 500px) {
       #header h1 {
         margin-top: 125px;
-        padding-left: 10px;
+        padding-left: 330px;
         line-height: 69px;
         font-size: 100px; } }
   #header h4 {
     font-family: "Comfortaa", cursive;
-    color: #688392;
+    color: white;
+    text-shadow: 3px 1px 4px #969696;
     font-size: 30px;
     position: absolute;
     font-weight: bold;
-    padding-left: 682px;
+    padding-left: 418px;
     margin-top: -23px; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 500px) {
       #header h4 {
         margin-top: 0px;
-        padding-left: 43px;
-        font-size: 20px;
-        color: white;
-        text-shadow: 3px 1px 4px #969696; } }
+        padding-left: 358px;
+        font-size: 20px; } }
 
 #about {
   margin-top: 10px;
@@ -72,14 +70,14 @@ body {
       font-size: 25px;
       padding-left: 30px;
       padding-top: 25px; }
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 500px) {
         #about .text-about p {
           font-size: 20px; } }
   #about img {
     opacity: 0.4;
     margin: 115px 0;
     width: 90%; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 500px) {
       #about img {
         margin: 0 15px; } }
 
@@ -92,7 +90,7 @@ body {
     font-family: "Covered By Your Grace", cursive;
     font-size: 4em;
     color: white; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 500px) {
       #tools h1 {
         padding-bottom: 30px; } }
   #tools img {
@@ -151,7 +149,7 @@ body {
   #proyects .caja {
     position: relative;
     padding: 30px 20px; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 500px) {
       #proyects .caja {
         padding: 30px 0; } }
     #proyects .caja .image {
@@ -177,7 +175,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%); }
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 500px) {
           #proyects .caja .overlay .text {
             font-size: 15px; } }
   #proyects a {
@@ -198,7 +196,7 @@ footer {
   background-size: cover;
   opacity: 0.8;
   height: 500px; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 500px) {
     footer {
       height: 500px; } }
   footer h1 {
@@ -212,14 +210,20 @@ footer {
     padding: 0px 40px; }
     footer a:hover {
       color: #ce0d55; }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 500px) {
       footer a {
         padding: 0 10px; } }
+  @media screen and (max-width: 500px) {
+    footer {
+      background-attachment: inherit; } }
 
 .elfoter {
   background-color: #edcdcf;
   color: #452c50;
   padding: 10px 0; }
+  @media screen and (max-width: 500px) {
+    .elfoter {
+      font-size: 20px; } }
   .elfoter .dos {
     margin-top: -12px; }
 

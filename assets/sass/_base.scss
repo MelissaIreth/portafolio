@@ -32,34 +32,32 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
-    background-opacity: 0.5;
 	h1{
 		font-family: $covered;
 		font-size: 130px;
 		color: $rosadito;
 		margin-top: 143px;
-		padding-left: 656px;
+		padding-left: 400px;
 		@media screen and (max-width: $small){
 			margin-top: 125px;
-			padding-left: 10px;
+			padding-left: 330px;
 			line-height: 69px;
 			font-size: 100px
 		}
 	}
 	h4{
 		font-family: $comforta;
-		color: #688392;
+		color: white;
+		text-shadow: 3px 1px 4px rgba(150, 150, 150, 1);
 		font-size: 30px;
 		position: absolute;
 		font-weight: bold;
-		padding-left: 682px;
+		padding-left: 418px;
 		margin-top: -23px;
 		@media screen and (max-width: $small){
 			margin-top: 0px;
-			padding-left: 43px;
+			padding-left: 358px;
 			font-size: 20px;
-			color: white;
-			text-shadow: 3px 1px 4px rgba(150, 150, 150, 1);
 		}
 	}
 }
@@ -253,12 +251,16 @@ footer{
 				padding: 0 10px;
 		}
 	}
+	@media screen and (max-width: $small){
+				background-attachment: inherit;
+		}
 }
 	.elfoter{
 		background-color: #edcdcf;
 		color: $morado;
 		padding: 10px 0;
 		@media screen and (max-width: $small){
+			font-size: 20px;
 			}
 	.dos{
 		margin-top: -12px;
