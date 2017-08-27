@@ -14,7 +14,8 @@ body {
   border: 0; }
   .navbar-default li:hover {
     background-color: #ce0d55;
-    color: white; }
+    color: white;
+    border-radius: 40px; }
   .navbar-default .navbar-nav > li > a {
     color: #ce0d55;
     font-size: 30px; }
@@ -34,12 +35,12 @@ body {
     color: #ce0d55;
     margin-top: 143px;
     padding-left: 400px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (max-width: 500px) {
       #header h1 {
-        margin-top: 173px;
-        padding-left: 395px;
+        margin-top: 230px;
+        padding-left: 90px;
         line-height: 69px;
-        font-size: 100px; } }
+        font-size: 90px; } }
   #header h4 {
     font-family: "Comfortaa", cursive;
     color: white;
@@ -49,10 +50,10 @@ body {
     font-weight: bold;
     padding-left: 418px;
     margin-top: -23px; }
-    @media screen and (min-width: 500px) {
+    @media screen and (max-width: 500px) {
       #header h4 {
         margin-top: 0px;
-        padding-left: 371px;
+        padding-left: 45px;
         font-size: 30px; } }
 
 #about {
@@ -162,15 +163,12 @@ body {
       background-color: #ce0d55; }
       #proyects .caja .overlay .text {
         color: white;
-        font-size: 30px;
+        font-size: 20px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%); }
-        @media screen and (max-width: 500px) {
-          #proyects .caja .overlay .text {
-            font-size: 15px; } }
   #proyects a {
     color: #cdcdc0;
     font-size: 2em; }

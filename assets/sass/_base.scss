@@ -15,6 +15,7 @@ body{
 	li:hover{
 		background-color: $rosadito;
 		color: white;
+		border-radius: 40px;
 	}
 	.navbar-nav>li>a {
     color: $rosadito;
@@ -38,11 +39,11 @@ body{
 		color: $rosadito;
 		margin-top: 143px;
 		padding-left: 400px;
-		@media screen and (min-width: $small){
-			margin-top: 173px;
-			padding-left: 395px;
+		@media screen and (max-width: $small){
+			margin-top: 230px;
+			padding-left: 90px;
 			line-height: 69px;
-			font-size: 100px
+			font-size: 90px
 		}
 	}
 	h4{
@@ -54,9 +55,9 @@ body{
 		font-weight: bold;
 		padding-left: 418px;
 		margin-top: -23px;
-		@media screen and (min-width: $small){
+		@media screen and (max-width: $small){
 			margin-top: 0px;
-			padding-left: 371px;
+			padding-left: 45px;
 			font-size: 30px;
 		}
 	}
@@ -190,15 +191,12 @@ body{
 		  background-color: $rosadito;
 		.text {
 		  color: white;
-		  font-size: 30px;
+		  font-size: 20px;
 		  position: absolute;
 		  top: 50%;
 		  left: 50%;
 		  transform: translate(-50%, -50%);
 		  -ms-transform: translate(-50%, -50%);
-		  @media screen and (max-width: $small){
-				font-size: 15px;
-			}
 		}
 		}
 	}
